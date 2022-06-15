@@ -1,1 +1,311 @@
-1213123
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"  content="我的世界，战地等各种游戏，游戏网站，安全，绿色无毒"/>
+    <meta name="keywords"  content="我的世界，战地等各种游戏，游戏网站，安全，绿色无毒"/>
+  <link rel="shortcut icon" href="img/mcico.ico">
+    <title>Game Time</title>
+   <style>
+       *{
+           margin: 0;
+           padding: 0;
+       }
+       body {
+           background-color: rgb(66, 66, 66);
+       }
+       
+      .box1 {
+          width: 1500px;
+          height: 400px;
+          margin:  auto;
+      }
+      .nav {
+        z-index: 999;
+          position: fixed;
+          width:100%;
+        height: 50px;
+        background: rgba(0, 0, 0, 0.3);
+      }
+      .nav li {
+          margin-right: 20px;
+          margin-left: 20px;
+          display: inline-block;
+        list-style: none;
+      }
+      .nav li a{
+          margin-left:20px;
+          color: rgb(255, 255, 255);
+     font-size: 35px;
+     text-decoration: none;
+      }
+   .nav .li1  a{
+     color: rgb(255, 255, 255);
+     font-size:25px;
+     text-decoration: none;
+
+ } 
+ .nav li:hover {
+    background: var(--crl);
+            letter-spacing: 3.5px;
+    box-shadow: 3px 0 10px 5px var(--crl);
+    transition: 0.5s;
+     
+ }
+ .bnner {
+     padding-top: 50px;
+     width: 1500px;
+     height: 500px;
+    background: url("img/bnner.jpg");
+    transition: 0.5s;
+    animation-name: bnner;
+    animation-duration: 0.6s;
+    animation: bnner  5s linear infinite ;
+ }
+ @keyframes bnner {
+    0%{
+        box-shadow:2px 0px 5px 5px  var(--clr);
+    }
+    50%{
+    box-shadow: 4px 0px 15px 18px var(--clr);
+ }
+ 75%{
+    box-shadow: 2px 0px 10px 10px var(--clr);
+ }
+ 100%{
+    box-shadow: 1px 0px 5px 6px var(--clr);
+ }
+    }
+ .bnner:hover {
+    box-shadow: 4px 0px 15px 18px var(--clr);
+    animation-direction: normal
+ }
+
+.box3 {
+    border-top: 10px solid rgb(66, 66, 66)\4;
+            margin-top: 10px;
+            margin: auto;
+            background-color: #fff;
+            width: 1500px;
+            height: 1000px;
+        }
+        .box3gt {
+            font-size: 100px;
+            padding-top: 70px;
+            text-align: center;
+            transition: 0.5s;
+        }
+        .box3gt:hover {
+            transform: translateY(-40px);
+        }
+        .box3zi {
+            padding-top: 70px;
+            text-align: center;
+           line-height: 80px;
+           transition: 0.5s;
+        }
+        .box3zi:hover {
+            transform: translateY(-35px);
+        }
+        .bner2 {
+            margin: auto;
+            width: 1500px;
+            height: 20px;
+            background-color: rgb(66, 66, 66);
+        }
+        .bnner2 {
+            width: 1460px;
+            height: 1000px;
+            background-color: rgb(194, 189, 189);
+        margin: auto;
+        border: 20px solid #fff;
+        }
+        .game li{
+            margin: auto;
+            list-style: none;
+            margin-top: 30px;
+            width: 1450px;
+            height: 165px;
+            background-color: #fff;
+        }
+        .imga {
+            float: left;
+            margin-left: 10px;
+            margin-right: 50px;
+            margin-top: 7px;
+            width: 300px;
+            height: 150px;
+        }
+        .bnner2 a { 
+            line-height: 30px;
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+        }
+        .bner2 h1 {
+            margin-bottom: 5px;
+        }
+         a:hover {
+            text-decoration: underline;
+            color: rgb(0, 106, 255);
+        }
+        .zhixun {
+            border: 20px solid #fff;
+            margin: auto;
+            background-color: rgb(192, 188, 188);
+            width: 1460px;
+            height: 1000px;
+        }
+       .wodeshijie {
+        border: 5px solid rgb(64, 174, 0);
+        margin-top: 15px;
+    margin-left: 30px;
+        width: 1400px;
+        height: 385px;
+        background-color: rgb(255, 217, 136);
+       }
+      .wodeshijie li {
+        border: 2px solid rgb(64, 174, 0);
+        float: right;
+        list-style: none;
+        margin-left: 10px;
+        width: 1300px;
+        height: 73px;
+        background-color:rgb(67, 55, 33);
+      }
+      .wodeshijie h1 {  
+        float: left;
+        margin-left: 10px;
+        font-size: 70px;
+      }
+      .wodeshijie a {
+        color: rgb(0, 221, 255);
+        text-decoration: none;
+        font-size: 30px;
+        transition: 0.5s;
+      }
+      .wodeshijie a:hover {
+        letter-spacing: 0.5em;
+        text-decoration: underline;
+        }
+   </style>
+</head>
+<body>
+       <!-- 导航栏 -->
+       <div class="nav">
+        <ul>
+            <li class="li1" style="--crl:#1e9bff">
+               <a href="#" > Game Time:&nbsp;&nbsp;</a>
+            </li>
+            <li style="--crl:#1e9bff">
+                <a href="#" ">顶部&nbsp;&nbsp;</a>
+            </li>
+            <li style="--crl:#1e9bff">
+                <a href="#">Game Time介绍&nbsp;&nbsp;</a>
+            </li>
+            <li style="--crl:#1e9bff">
+                <a href="#" >游戏&nbsp;&nbsp;</a>
+            </li>
+            <li style="--crl:#1e9bff">
+                <a href="#" >游戏资讯&nbsp;&nbsp;</a>
+            </li >
+            <li style="--crl:#1e9bff">
+               <a href="#">游戏攻略&nbsp;&nbsp;</a>
+           </li>
+        </ul>
+    </div>
+    <!-- 头部 -->
+ <div class="box1">
+  
+     <!-- bnnerb部分 -->
+         <div class="bnner" style="--clr:rgb(0, 106, 255);">
+         </div>
+     </div>
+        <!-- 头部结束 -->
+
+        <!-- 介绍部分开始 -->
+     <div class="box3">
+          <h1 class="box3gt">
+              Game Time
+            </h1>
+            <h1 class="box3gt">
+                一个懂你的游戏堡垒
+              </h1>
+              <h1 class="box3zi">
+                Game Time: <br>
+                它是一个很好的游戏网站因为它便捷且简洁是一个合格的游戏网站是宅男们理想的“栖息地” <br>
+
+                它拥有着最新的游戏资讯与干净的下载地址，还有精彩的游戏视频与详细的攻略<br>
+                是您打发闲暇时光的不二之选，您大可以在周末时玩上一天的精彩游戏而<b>Game Time</b> 将会为<br>
+                您提供最好的游戏体验感，那么事不宜迟现在就出征游戏世界吧！<br>
+                好好加油吧！Game Time将会做你的坚强后盾！！！<br>
+              </h1>
+     </div>
+     <!-- 介绍部分结束 -->
+     <!-- 游戏 -->
+     <div class="bner2"></div>
+     <div class="bnner2">
+<ul class="game">
+    <li> 
+        <a href="https://mc.163.com/" target="_blank">
+            <img src="img/mc.jpg" class="imga">
+            <h1>我的世界</h1>
+            一款超高自由度的沙盒游戏，您可以在游戏里建造您喜欢的建筑而且该目前游戏支持联机系统
+            也可以加上各种有趣的mod增加游戏的乐趣，快和您的小伙伴们一起去建造自己喜欢的美妙世界吧！<br>
+            <samp>游戏整体流程为：砍树与制造装备&gt;前往下界去寻找用于制作末影之眼的材料&gt;寻找末地传送们前往末地讨伐末影龙</samp><br>
+            <samp>整体游戏评分为：7颗星。</samp>
+        </a>
+    </li>
+    <li><a href="https://www.ea.com/games/battlefield/battlefield-5?isLocalized=true" target="_blank"> 
+   <img src="img/bfv.jpg" alt="" class="imga">
+        <h1>战地风云V</h1>
+          战地风云V是一款全球非常火热的二战题材游戏，以反派的视角呈现出了战争的残酷性，游戏为多人游戏拥有超大型的地图
+          一局游戏中最多可以有64人同时参与游戏，游戏内有超多丰富的枪械与强大的载具快去和您的好友一起搭上坦克击溃敌军吧！
+          <br>
+        <samp>游戏整体流程为：与战友商量各种战术，攻占据点，夺得胜利</samp><br>
+        <samp>整体游戏评分为：8颗星。</samp></a></li>
+    <li><a href="#">  
+         <img src="img/mc.jpg" class="imga">
+        <h1>战地风云V</h1>
+          战地风云V是一款全球非常火热的二战题材游戏，以反派的视角呈现出了战争的<br>
+        <samp>游戏整体流程为：砍树与制造装备&gt;前往下界去寻找用于制作末影之眼的材料&gt;寻找末地传送们前往末地讨伐末影龙</samp><br>
+        <samp>整体游戏评分为：4颗星。</samp></a></li>
+    <li><a href="#">
+           <img src="img/mc.jpg" class="imga">
+        <h1>我的世界</h1>
+        一款超高自由度的沙盒游戏，您可以在游戏里建造您喜欢的建筑而且该目前游戏支持联机系统
+        也可以加上各种有趣的mod增加游戏的乐趣，快和您的小伙伴们一起去建造自己喜欢的美妙世界吧！<br>
+        <samp>游戏整体流程为：砍树与制造装备&gt;前往下界去寻找用于制作末影之眼的材料&gt;寻找末地传送们前往末地讨伐末影龙</samp><br>
+        <samp>整体游戏评分为：4颗星。</samp></a></li>
+    <li><a href="#">   
+        <img src="img/mc.jpg" class="imga">
+        <h1>我的世界</h1>
+        一款超高自由度的沙盒游戏，您可以在游戏里建造您喜欢的建筑而且该目前游戏支持联机系统
+        也可以加上各种有趣的mod增加游戏的乐趣，快和您的小伙伴们一起去建造自己喜欢的美妙世界吧！<br>
+        <samp>游戏整体流程为：砍树与制造装备&gt;前往下界去寻找用于制作末影之眼的材料&gt;寻找末地传送们前往末地讨伐末影龙</samp><br>
+        <samp>整体游戏评分为：4颗星。</samp></a></li>
+</ul>
+     </div>
+     <!-- 游戏结束 -->
+     <div class="bner2"></div>
+     <div class="zhixun">
+        <div >
+            <ul class="wodeshijie">
+                <h1>
+                    我<br> 
+                    的<br>
+                    世<br>
+                    界<br>
+                </h1>
+                <li><a href="#" style="--clr:rgb(47, 255, 47);"> &gt; 微软免费领我的世界</a></li>
+                <li><a href="#" style="--clr:rgb(47, 255, 47);">&gt;我的世界基岩版免费</a></li>
+                <li><a href="#" style="--clr:rgb(47, 255, 47);">&gt;我的世界基岩版免费</a></li>
+                <li><a href="#" style="--clr:rgb(47, 255, 47);">&gt;我的世界基岩版免费</a></li>
+                <li><a href="#" style="--clr:rgb(47, 255, 47);">&gt;我的世界基岩版免费</a></li>
+
+            </ul>
+        </div>
+     </div>
+</body>
+</html>
