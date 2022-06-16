@@ -158,36 +158,83 @@
             height: 1000px;
         }
        .wodeshijie {
-        border: 5px solid rgb(64, 174, 0);
+        border: 5px solid rgb(0, 0, 0);
         margin-top: 15px;
     margin-left: 30px;
         width: 1400px;
-        height: 385px;
-        background-color: rgb(255, 217, 136);
+        height: 950px;
+        background-color: rgb(255, 255, 255);
        }
       .wodeshijie li {
-        border: 2px solid rgb(64, 174, 0);
-        float: right;
+        border: 3px solid rgb(255, 255, 255);
         list-style: none;
         margin-left: 10px;
-        width: 1300px;
-        height: 73px;
-        background-color:rgb(67, 55, 33);
+        width: 1380px;
+        height: 80px;
+        background-color:rgb(24, 0, 236);
       }
-      .wodeshijie h1 {  
-        float: left;
-        margin-left: 10px;
-        font-size: 70px;
+      .wodeshijie h2{
+        font-size: 50px;
+        text-align: center;
       }
       .wodeshijie a {
-        color: rgb(0, 221, 255);
+        color: rgb(255, 255, 255);
         text-decoration: none;
         font-size: 30px;
         transition: 0.5s;
       }
       .wodeshijie a:hover {
+        color: red;
+      }
+      .wodeshijie a:hover {
         letter-spacing: 0.5em;
         text-decoration: underline;
+        }
+        .dibu {
+            border-top: 3px solid rgb(103, 103, 103);
+            margin: auto;
+            background-color: rgb(192, 188, 188);
+            width: 100%;
+            height: 300px;
+        }
+        .dibu ul {
+            margin-top: 30px;
+            float: left;
+            text-align: center;
+            margin-left: 240px;
+        }
+        .dibu ul li:nth-child(1) {
+        font-size: 20px;
+        }
+        .dibu ul li {
+            list-style: none;
+            font-size: 15px;
+            color: rgb(121, 121, 121);
+        }
+        .dibu a {
+            color: rgb(121, 121, 121);
+            text-decoration: none;
+        }
+        .dibu a:hover{
+            color: rgb(130, 23, 23);
+        }
+        hr {
+            height: 5px;
+            margin-top: 10px;
+        }
+        .tubiao {
+            width: 900px;
+            height:150px;
+        }
+        .tubiao a {
+            margin-top: 20px;
+            float: right;
+            width: 50px;
+            height: 50px;
+        }
+        .tubiao a img {
+            width: 100%;
+            height: 50px;
         }
    </style>
 </head>
@@ -208,7 +255,7 @@
                 <a href="#youxi" >游戏&nbsp;&nbsp;</a>
             </li>
             <li style="--crl:#1e9bff">
-                <a href="#" >游戏资讯&nbsp;&nbsp;</a>
+                <a href="#zhixun" >游戏资讯&nbsp;&nbsp;</a>
             </li >
             <li style="--crl:#1e9bff">
                <a href="#">游戏攻略&nbsp;&nbsp;</a>
@@ -287,25 +334,95 @@
         <samp>整体游戏评分为：4颗星。</samp></a></li>
 </ul>
      </div>
-     <!-- 游戏结束 -->
+     <!-- 游戏介绍 -->
      <div class="bner2"></div>
      <div class="zhixun">
         <div >
-            <ul class="wodeshijie">
-                <h1>
-                    我<br> 
-                    的<br>
-                    世<br>
-                    界<br>
-                </h1>
-                <li><a href="#" style="--clr:rgb(47, 255, 47);"> &gt; 微软免费领我的世界</a></li>
-                <li><a href="#" style="--clr:rgb(47, 255, 47);">&gt;我的世界基岩版免费</a></li>
-                <li><a href="#" style="--clr:rgb(47, 255, 47);">&gt;我的世界基岩版免费</a></li>
-                <li><a href="#" style="--clr:rgb(47, 255, 47);">&gt;我的世界基岩版免费</a></li>
-                <li><a href="#" style="--clr:rgb(47, 255, 47);">&gt;我的世界基岩版免费</a></li>
-
+            <ul class="wodeshijie" id="zhixun">
+                <li><h2>游戏资讯</h2></li>
+                <li><a href="#" >&gt;微软我的世界基岩版免费啦！！！</a></li>
+                <li><a href="#" >&gt;微软我的世界java版免费啦！！！</a></li>
+                <li><a href="#" >&gt;战地V天天打骨折，背刺一哥EA退钱！！！（QAQ）</a></li>
+                <li><a href="#" >&gt;PUBG免费啦！老玩家送福利咯！！！</a></li>
+                <li><a href="#" >&gt;Game Time网站开业啦！！！！</a></li>
+                <li><a href="#" >&gt;steam一键白嫖105个免费小游戏！</a></li>
+                <li><a href="#" >&gt;每天一个E宝喜加一！！凭实力白嫖的凭什么不要！！</a></li>
+                <li><a href="#" >&gt;给她爱五豪华版历史最低快冲啊！！！</a></li>
+                <li><a href="#" >&gt;壁纸怎么选？快来，我教你！！</a></li>
+                <li><a href="#" >&gt;我的世界药水大全</a></li>
             </ul>
         </div>
      </div>
+     <!-- 底部 -->
+     <div class="dibu">
+        <hr>
+        <ul>
+            <li>
+                Game Time介绍
+            </li>
+                <li>
+                    <a href="#">
+                        开发者团队
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        作者博客
+                    </a>
+                </li>
+        </ul>
+        <ul>
+            <li>
+                游戏购买指南
+            </li>
+                <li>
+                    <a href="#">
+                        一条龙式礼包
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        推荐
+                    </a>
+                </li>
+        </ul>
+        <ul>
+                <li>
+                        支付方式
+                </li>
+            <li>
+                <a href="#">
+                    分期
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    在线支付
+                </a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                游戏售后
+            </li>
+            <li>
+                <a href="#">
+                    支持7天试玩退款
+                </a>
+            </li>
+                <li>
+                    <a href="#">
+                        礼包退款通道
+                    </a>
+                </li>
+        </ul>
+        
+        <div class="tubiao">
+            <a href="#"><img src="img/lianshu.png" alt=""></a>
+            <a href="#"><img src="img/youtude.png" alt=""></a>
+            <a href="#"><img src="img/tuite.png" alt=""></a>
+        </div>
+     </div>
+     <!-- 底部结束 -->
 </body>
 </html>
