@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"  content="我的世界，战地等各种游戏，游戏网站，安全，绿色无毒"/>
+    <meta name="keywords"  content="我的世界，战地等各种游戏，游戏网站，安全，绿色无毒"/>
+  <link rel="shortcut icon" href="img/mcico.ico">
+    <title>Game Time</title>
+    <link rel="stylesheet" href="wdsj.css">
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    li {
+        list-style: none;
+
+    }
+
+    body {
+        background-color: #FFFAEC;
+    }
+
+
+    .beijin {
+        float: left;
+        position: fixed;
+    }
+
+    /* 音乐 */
+
+
+    .nav {
+        z-index: 999;
+        position: fixed;
+        width: 100%;
+        height: 50px;
+        background: rgba(0, 0, 0, 0.3);
+    }
+
+    .nav li {
+        margin-right: 20px;
+        margin-left: 20px;
+        display: inline-block;
+        list-style: none;
+    }
+
+    .nav li a {
+        margin-left: 20px;
+        color: rgb(255, 255, 255);
+        font-size: 35px;
+        text-decoration: none;
+    }
+
+    .nav .li1 a {
+        color: rgb(255, 255, 255);
+        font-size: 25px;
+        text-decoration: none;
+
+    }
+
+    .nav li:hover {
+        background: var(--crl);
+        letter-spacing: 3.5px;
+        box-shadow: 3px 0 10px 5px var(--crl);
+        transition: 0.5s;
+    }
+
+    /* 头 */
+    .xin {
+        width: 1500px;
+        height: 600px;
+        margin: 0 auto;
+        background-image: url(zhandi/img/bfv.jpg);
+        background-size: cover;
+    }
+
+    .shipin {
+
+        width: 300px;
+        height: 200px;
+    }
+
+    .xin video {
+        margin-top: 150px;
+        margin-left: 100px;
+        width: 600px;
+        height: 300px;
+    }
+
+    /* 导航栏，版心 */
+    /* 左边内容 */
+    #ny2 .p {
+        font-size: 30px;
+        text-align: center;
+        border-top: 10px solid rgb(255, 175, 56);
+    }
+
+    #ny2 {
+        width: 1500px;
+        height: 450px;
+        margin: 10px auto;
+        border: 1px seashell solid;
+        background-color: rgb(115, 255, 117);
+    }
+
+
+
+    #ny2 .nny1 {
+        width: 1500px;
+        height: 500px;
+        margin: 10px 170px;
+    }
+
+    #ny2 .nny1 .zuo {
+        float: left;
+        width: 580px;
+        height: 300px;
+        border: 10px rgb(234, 131, 58) solid;
+        background-color: aqua;
+        background-size: cover;
+        background-image: url(zhandi/img/V2.jpg);
+        position: relative;
+
+    }
+
+    #ny2 .nny1 .zuo ul {
+        position: absolute;
+        bottom: 10px;
+        right: 20px;
+    }
+
+    #ny2 .nny1 .zuo ul li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    #ny2 .nny1 .zuo ul li a {
+        color: aliceblue;
+        text-decoration: none;
+        display: inline-block;
+        padding: 5px 10px;
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+
+    #ny2 .nny1 .zuo ul li a:hover {
+        background-color: chocolate;
+    }
+
+
+    /* <左边内容> */
+    /* 右边内容 */
+    #ny2 .nny1 .you {
+        float: left;
+        width: 600px;
+        height: 320px;
+        background-color: #fff;
+    }
+
+    #ny2 .nny1 .you ul li .b {
+        height: 30px;
+        width: 600px;
+        margin: 0 20px;
+    }
+
+    #ny2 .nny1 .you ul li a {
+        height: 30px;
+        width: 400px;
+        color: black;
+        font-size: 18px;
+        display: inline-block;
+        text-decoration: none;
+    }
+
+    #ny2 .nny1 .you ul li .l {
+        font-size: 21px;
+    }
+
+
+    #ny2 .nny1 .you ul li a:hover {
+
+        height: 30px;
+        width: 500px;
+        color: rgb(0, 179, 30);
+    }
+
+    #ny2 .nny1 .you ul .gxny {
+        text-align: center;
+        height: 50px;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    #ny2 .nny1 .you ul li a span {
+        font-size: 21px;
+        color: rgb(232, 203, 74);
+    }
+
+    #ny2 .nny1 .you ul .gxny p {
+        display: inline-block;
+        height: 30px;
+        width: 100px;
+    }
+
+    #ny2 .nny1 .you ul .gxny p a {
+        height: 29px;
+        width: 100px;
+        padding: 10px 0;
+    }
+
+    #ny2 .nny1 .you ul .gxny p .l:hover {
+        background-color: antiquewhite;
+    }
+
+    /* <右边内容> */
+    /* 以上内容2 */
+    /* 内容3 */
+    #ny3 {
+        width: 1500px;
+        height: 200px;
+        margin: 10px auto;
+        background-color: aqua;
+        border: 1px seashell solid;
+        margin-top: -100px;
+    }
+
+    #ny3 ul li {
+        display: inline-block;
+    }
+
+    #ny3 ul li a {
+        display: inline-block;
+    }
+
+    #ny3 ul li {
+        width: 300px;
+        height: 178px;
+        float: left;
+    }
+
+
+    #ny3 ul .t1 a {
+        width: 300px;
+        height: 178px;
+        background: url(wdsj/zc1.png) no-repeat;
+    }
+
+    #ny3 ul .t1 a:hover {
+        background: url(wdsj/zc2.png);
+    }
+
+    #ny3 ul .t2 a {
+        width: 300px;
+        height: 178px;
+        background: url(wdsj/zc3.png) no-repeat;
+    }
+
+    #ny3 ul .t2 a:hover {
+        background: url(wdsj/zc4.png);
+    }
+
+    #ny3 ul .t3 a {
+        width: 300px;
+        height: 178px;
+        background: url(wdsj/zc5.png) no-repeat;
+    }
+
+    #ny3 ul .t3 a:hover {
+        background: url(wdsj/zc6.png);
+    }
+
+    #ny3 ul .t4 a {
+        width: 300px;
+        height: 178px;
+        background: url(wdsj/zc7.png) no-repeat;
+    }
+
+    #ny3 ul .t4 a:hover {
+        background: url(wdsj/zc8.png);
+    }
+
+    #ny3 ul .t5 a {
+        width: 300px;
+        height: 178px;
+        background: url(wdsj/zc9.png) no-repeat;
+    }
+
+    #ny3 ul .t5 a:hover {
+        background: url(wdsj/zc10.png);
+    }
+
+
+    /* 内容4 */
+    /* 玩家作品 */
+    #ny4 {
+        width: 1500px;
+        height: 500px;
+        margin: 10px auto;
+        background-color: black;
+    }
+
+    #ny4 .wjzp {
+        float: left;
+        width: 209px;
+        height: 463px;
+    }
+
+    #ny4 .wjzp li {
+        display: inline-block;
+    }
+
+    #ny4 .wjzp .zuo {
+        width: 209px;
+        height: 120px;
+        border-top: 2px chocolate solid;
+    }
+
+    #ny4 .wjzp .zuo a {
+        display: inline-block;
+        width: 209px;
+        height: 90px;
+        padding-top: 40px;
+        color: black;
+        font-size: 25px;
+        text-decoration: none;
+        text-align: center;
+        background-color: #fff;
+    }
+
+    #ny4 .wjzp .zuo a:hover {
+        color: #fff;
+        background-color: coral;
+    }
+
+    /* 玩家作品 */
+    /* 图片 */
+    #ny4 .tp {
+        float: left;
+        width: 1291px;
+        height: 500px;
+        background-color: aquamarine;
+    }
+
+    #ny4 .tp li {
+        display: inline-block;
+        width: 290px;
+        height: 200px;
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+
+    #ny4 .tp li a {
+        display: inline-block;
+        width: 290px;
+        height: 200px;
+        text-shadow: 3px 7px 11px;
+        background-color: aqua;
+
+    }
+
+    #ny4 .tp li a img {
+        max-width: 100%;
+
+    }
+
+    #ny4 .tp li a img:hover {
+        box-shadow: 5px 10px 10px rgba(0, 10, 0, 0.5);
+        transition-property: box-shadow;
+        transform: translate(-3px, -3px);
+        transition-duration: 0.2s;
+
+    }
+
+    /* 图片 */
+
+    /* 内容5 */
+    #ny5 {
+        width: 1500px;
+        height: 500px;
+        margin: 10px auto;
+        background-color: rgb(247, 0, 0);
+    }
+
+    #ny5 .spzx {
+        float: left;
+        width: 165px;
+        height: 47px;
+    }
+
+    #ny5 .xz li {
+        display: inline-block;
+        width: 128px;
+        height: 54px;
+        margin-left: 80px;
+    }
+
+    #ny5 .xz li a {
+        display: inline-block;
+        width: 128px;
+        height: 42px;
+        color: #123;
+        text-align: center;
+        font-size: 24px;
+        padding-top: 12px;
+        text-decoration: none;
+    }
+
+    #ny5 .xz li a:hover {
+        color: #fff;
+        background-image: url(wdsj/spxz.jpg);
+    }
+
+    /* 视频 */
+    #ny5 .sp ul li {
+        float: left;
+        /* display: inline-block; */
+    }
+
+    #ny5 .sp ul li a {
+        display: inline-block;
+    }
+
+    #ny5 .sp ul .s1 {
+        width: 480px;
+        height: 360px;
+        margin-top: 40px;
+        margin-left: 20px;
+        background-color: aqua;
+    }
+
+    #ny5 .sp ul .s2 {
+        width: 280px;
+        height: 150px;
+        margin-top: 40px;
+        margin-left: 30px;
+        background-color: aqua;
+    }
+
+    #ny5 .sp ul li a .sp1 {
+        width: 500px;
+        height: 400px;
+    }
+
+    #ny5 .sp ul li a p {
+        display: inline-block;
+        /* float: left; */
+    }
+
+    /* 内容6 */
+    #ny6 {
+        width: 1500px;
+        height: 500px;
+        margin: 10px auto;
+        background-color: rgb(2, 130, 0);
+    }
+
+    #di {
+        width: 100%;
+        height: 500px;
+        background-color: rgb(117, 53, 255);
+    }
+</style>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li class="li1" style="--crl:#1e9bff">
+                <a href="index.html"> Game Time:&nbsp;&nbsp;</a>
+            </li>
+            <li style="--crl:#1e9bff">
+                <a href="#">顶部&nbsp;&nbsp;</a>
+            </li>
+            <li style="--crl:#1e9bff">
+                <a href="#">Game Time介绍&nbsp;&nbsp;</a>
+            </li>
+            <li style="--crl:#1e9bff">
+                <a href="#">游戏&nbsp;&nbsp;</a>
+            </li>
+            <li style="--crl:#1e9bff">
+                <a href="#">游戏资讯&nbsp;&nbsp;</a>
+            </li>
+            <li style="--crl:#1e9bff">
+                <a href="#">游戏攻略&nbsp;&nbsp;</a>
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="xin">
+        <div class="shipin">
+            <video src="zhandi/MP4/宣传.mp4" controls autoplay poster="zhandi/img/bfv.jpg" >无法播放</video>
+        </div>
+    </div>
+    <!-- 导航栏和版心 -->
+    <div id="ny2">
+        <p class="p"><b>更新内容</b></p>
+        <div class="nny1">
+            <div class="zuo">
+                <ul>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                </ul>
+            </div>
+            <div class="you">
+                <ul>
+                    <li class="gxny"><b>
+                            <p><a href="#" class="l">最新</a></p>
+                            <p><a href="#" class="l">热点</a></p>
+                            <p><a href="#" class="l">新闻</a></p>
+                            <p><a href="#" class="l">公告</a></p>
+                        </b></li>
+                    <li><a href="#" class="b">><span>【公告】</span>关于游戏内作弊违规等行为的处罚公告</a></li>
+                    <li><a href="#" class="b">><span>【公告】</span>关于游戏内作弊违规等行为的处罚公告</a></li>
+                    <li><a href="#" class="b">><span>【新闻】</span>棕香四溢，共迎端午！《我的世界》端午主...</a></li>
+                    <li><a href="#" class="b">><span>【新闻】</span>棕香四溢，共迎端午！《我的世界》端午主...</a></li>
+                    <li><a href="#" class="b">><span>【热点】</span>叮咚！下界我来啦！~</a></li>
+                    <li><a href="#" class="b">><span>【热点】</span>叮咚！下界我来啦！~</a></li>
+                    <li><a href="#" class="b">><span>【热点】</span>华丽大变身！让换装更有仪式感！</a></li>
+                    <li><a href="#" class="b">><span>【热点】</span>华丽大变身！让换装更有仪式感！</a></li>
+                    <li><a href="#" class="b">><span>【热点】</span>铁桶改造 | 拜托这样的港口超酷的！</a></li>
+            </div>
+        </div>
+
+        <div id="ny3">
+            <ul>
+                <li class="t1"><a href="#"></a></li>
+                <li class="t2"><a href="https://mc.163.com/xinshou/" target="_blank"></a></li>
+                <li class="t3"><a href="https://mc.163.com/video/" target="_blank"></a></li>
+                <li class="t4"><a href="https://mc.163.com/2021/kfz/" target="_blank"></a></li>
+                <li class="t5"><a href="http://mcmall.163.com/act/pub/FAb3c4Ci2IC0.html" target="_blank"></a></li>
+            </ul>
+        </div>
+        <div id="ny4">
+            <div class="wjzp">
+                <ul>
+                    <li><img src="wdsj/wjzp.png"></li>
+                    <li class="zuo"><a href="#"><b>精彩图片</b></a></li>
+                    <li class="zuo"><a href="#"><b>头像下载</b></a></li>
+                    <li class="zuo"><a href="#"><b>表情包</b></a></li>
+                </ul>
+            </div>
+            <div class="tp">
+                <ul>
+                    <li>
+                        <a href="#"><img src="wdsj/fj1.jpg"></a>
+                        <p>123</p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="wdsj/fj2.webp"></a>
+                        <p>123</p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="wdsj/fj3.jpg"></a>
+                        <p>123</p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="wdsj/fj4.jpg"></a>
+                        <p>123</p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="wdsj/fj5.jpg"></a>
+                        <p>123</p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="wdsj/fj6.jpg"></a>
+                        <p>123</p>
+                    </li>
+                    <li>
+                        <a href="#"><img src=""></a>
+                        <p>123</p>
+                    </li>
+                    <li>
+                        <a href="#"><img src=""></a>
+                        <p>123</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="ny5">
+            <div class="spzx">
+                <img src="wdsj/spzx.png">
+            </div>
+            <div class="xz">
+                <ul>
+                    <li><a href="#"><b>综合</b></a></li>
+                    <li><a href="#"><b>推荐</b></a></li>
+                    <li><a href="#"><b>攻略</b></a></li>
+                    <li><a href="#"><b>风景</b></a></li>
+                    <li><a href="#"><b>动画</b></a></li>
+                </ul>
+            </div>
+            <div class="sp">
+                <ul>
+                    <li class="s1">
+                        <a href="#">
+                            <video src="" class="sp1"></video>
+                            <p>123</p>
+                        </a>
+                    </li>
+                    <li class="s2">
+                        <a href="#">
+                            <video src="" class="sp2"></video>
+                            <p>123</p>
+                        </a>
+                    </li>
+                    <li class="s2">
+                        <a href="#">
+                            <video src="" class="sp2"></video>
+                            <p>123</p>
+                        </a>
+                    </li>
+                    <li class="s2">
+                        <a href="#">
+                            <video src="" class="sp2"></video>
+                            <p>123</p>
+                        </a>
+                    </li>
+                    <li class="s2">
+                        <a href="#">
+                            <video src="" class="sp2"></video>
+                            <p>123</p>
+                        </a>
+                    </li>
+                    <li class="s2">
+                        <a href="#">
+                            <video src="" class="sp2"></video>
+                            <p>123</p>
+                        </a>
+                    </li>
+                    <li class="s2">
+                        <a href="#">
+                            <video src="" class="sp2"></video>
+                            <p>123</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="ny6"></div>
+        <div id="di"></div>
+        <span class="beijin">
+            <audio src="zhandi/MP3/主题曲.wav" autoplay="autoplay" loop="loop"></audio>
+        </span>
+    </div>
+</body>
+
+</html>

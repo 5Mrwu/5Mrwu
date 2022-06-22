@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"  content="我的世界，战地等各种游戏，游戏网站，安全，绿色无毒"/>
+    <meta name="keywords"  content="我的世界，战地等各种游戏，游戏网站，安全，绿色无毒"/>
+  <link rel="shortcut icon" href="img/mcico.ico">
+    <title>Game Time</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding:0;
+    }
+    body{
+        overflow: hidden;
+    }
+    section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: linear-gradient( to bottom,#f1f4f9,#dff1ff);
+
+    }
+    section .color {
+        position: absolute;
+        filter: blur(150px);
+    }
+    section .color:nth-child(1){
+        top: -350px;
+        width: 600px;
+        height: 600px;
+        background: #001eff;
+        animation: seee 5s linear infinite;
+    }
+    section .color:nth-child(2){
+        bottom: -150px;
+        left: 100px;
+        width: 500px;
+        height: 500px;
+        animation: see 8s linear infinite;
+    }
+    section .color:nth-child(3){
+        bottom: 50px;
+        right: 100px;
+        width: 300px;
+        height: 300px;
+        animation: se 10s linear infinite;
+    }
+    @keyframes se {
+        0% {
+            background: #44ff00;
+                        transition: 5s;
+        }
+        50%{    
+            background: #0d00ff;
+        }
+        80%{
+            background: #ff0000;
+        }
+        100%{
+            background: #44ff00;
+        }
+    }
+    @keyframes see {
+        0% {
+            background: #e1ff00;
+            transition: 5s;
+        }
+        50%{
+            background: #ff00e6;
+        }
+        80%{
+            background: #9900c3;
+        }
+        100%{
+            background: #e1ff00;
+        }
+    }
+    @keyframes seee {
+        0% {
+            background: #ff9900;
+            transition: 5s;
+        }
+        50%{
+            background: #00ff62;
+        }
+        80%{
+            background: #00f2ff;
+        }
+        100%{
+            background: #ffae00;
+        }
+    }
+    .box{
+        position: relative;
+    }
+    .box .square {
+        position: absolute;
+        backdrop-filter: blur(5px);
+        box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        border-right: 1px solid rgba(255, 255, 255, 0.2);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        background: rgba(255,255,255,0.2);
+        border-radius: 10px;
+        animation: animate 10s linear infinite;
+        animation-delay: calc(-1s * var(--i));
+    }
+    @keyframes animate {
+        0%,100%{
+         transform: translateY(-40px);
+        }
+        50%{
+            transform: translateY(40px);
+        }
+    }
+    .box .square:nth-child(1) {
+top: 130px ;
+right: -100px;
+width: 100px;
+height: 100px;
+    }    
+    .box .square:nth-child(2) {
+top: 80px ;
+right: 380px;
+width: 120px;
+height: 120px;
+z-index: 2;
+    }
+    .box .square:nth-child(3) {
+bottom:380px ;
+right: -60px;
+width: 80px;
+height: 80px;
+z-index: 2;
+    }
+    .box .square:nth-child(4) {
+bottom: -50px ;
+right: 100px;
+width: 50px;
+height: 50px;
+    }
+    .box .square:nth-child(5) {
+top: -60px ;
+right: 140px;
+width: 60px;
+height: 60px;
+    }
+    .container {
+        position: relative;
+        width: 400px;
+        min-height: 400px;
+        background: rgba(255,255,255,0.2);
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(5px);
+        box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        border-right: 1px solid rgba(255, 255, 255, 0.2);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    .form{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding: 40px;
+    }
+    .form h2 {
+        position: relative;
+        color: #fff;
+        font-size: 24px;
+        letter-spacing: 1px;
+        margin-bottom: 40px;
+    }
+    .form h2::before{
+        position: absolute;
+        content: "";
+        left: 0;
+        bottom: -10px;
+        width: 80px;
+        height: 4px;
+        background-color: #fff;
+    }
+    .form .inoutBox{
+       width: 100%;
+        margin-top: 20px;
+    }
+    .form .inoutBox input{
+        width: 100%;
+        background:rgba(255, 255, 255, 0.5);
+        border: none;
+        outline: none;
+        padding: 10px 10px ;
+        border-radius: 35px;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        border-right: 1px solid rgba(255, 255, 255, 0.2);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        font-size: 16px;
+        letter-spacing: 1px;
+        color: #fff;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    }
+    .form .inoutBox input::placeholder {
+        color: rgb(178, 178, 178);
+    }
+    .form .inoutBox input[ type="submit"]{
+        background-color: #fff;
+        color: #666;
+        max-width: 100px;
+        cursor: pointer;
+        margin-bottom: 20px;
+        font-weight: 600;
+    }
+    .forget {
+        margin-top: 5px;
+        color: rgb(196, 196, 196);
+    }
+    .forget a{
+        color: rgb(176, 176, 176);
+        font-weight: 600;
+    }
+    .nav {
+        z-index: 999;
+          position: fixed;
+          width:100%;
+        height: 50px;
+        background: rgba(0, 0, 0, 0.3);
+      }
+      .nav li {
+          margin-right: 20px;
+          margin-left: 20px;
+          display: inline-block;
+        list-style: none;
+      }
+      .nav li a{
+          margin-left:20px;
+          color: rgb(255, 255, 255);
+     font-size: 35px;
+     text-decoration: none;
+      }
+   .nav .li1  a{
+     color: rgb(255, 255, 255);
+     font-size:25px;
+     text-decoration: none;
+
+ } 
+ .nav li:hover {
+    background: var(--crl);
+            letter-spacing: 3.5px;
+    box-shadow: 3px 0 10px 5px var(--crl);
+    transition: 0.5s;
+     
+ }
+</style>
+<body>
+     <!-- 导航栏 -->
+     <div class="nav">
+        <ul>
+            <li class="li1" style="--crl:#1e9bff">
+               <a href="index.html" > Game Time:&nbsp;&nbsp;</a>
+            </li>
+            <li style="--crl:#1e9bff">
+                <a href="#">顶部&nbsp;&nbsp;</a>
+            </li>
+            <li style="--crl:#1e9bff">
+                <a href="#jieshao">Game Time介绍&nbsp;&nbsp;</a>
+            </li>
+            <li style="--crl:#1e9bff">
+                <a href="#youxi" >游戏&nbsp;&nbsp;</a>
+            </li>
+            <li style="--crl:#1e9bff">
+                <a href="#zhixun" >游戏资讯&nbsp;&nbsp;</a>
+            </li >
+            <li style="--crl:#1e9bff">
+               <a href="#gonglue">游戏攻略&nbsp;&nbsp;</a>
+           </li>
+           <li style="--crl:#1e9bff">
+            <a href="Login.html"> 用户登入&nbsp;&nbsp;</a>
+        </li>
+        </ul>
+    </div>
+    <section>
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="box">
+            <div class="square" style="--i:0;"></div>
+            <div class="square" style="--i:1;"></div>
+            <div class="square" style="--i:2;"></div>
+            <div class="square" style="--i:3;"></div>
+            <div class="square" style="--i:4;"></div>
+            <div class="container">
+                <div class="form">
+                    <h2>Login Form</h2>
+                    <form>
+                        <div class="inoutBox">
+                            <input type="text" placeholder="Username">
+                        </div>
+                        <div class="inoutBox">
+                            <input type="Password" placeholder="Password">
+                        </div>
+                        <div class="inoutBox">
+                            <input type="submit" value="LOGIN">
+                        </div>
+                        <p class="forget">Forgot password ? <a href="#">Cilck Here</a></p>
+                        <p class="forget">Don`t have an account ?<a href="#">Sing up</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
