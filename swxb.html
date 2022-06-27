@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"  content="我的世界，战地等各种游戏，游戏网站，安全，绿色无毒"/>
+    <meta name="keywords"  content="我的世界，战地等各种游戏，游戏网站，安全，绿色无毒"/>
+  <link rel="shortcut icon" href="img/mcico.ico">
+    <title>Game Time</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+
+    p {
+        display: inline-block;
+    }
+
+    body {
+        background: rgb(0, 0, 0, 1);
+    }
+
+    /* 导航 */
+    .nav {
+        z-index: 999;
+        position: fixed;
+        width: 100%;
+        height: 50px;
+        background: rgba(0, 0, 0, 0.3);
+    }
+
+    .nav li {
+        margin-right: 20px;
+        margin-left: 20px;
+        display: inline-block;
+        list-style: none;
+    }
+
+    .nav li a {
+        margin-left: 20px;
+        color: rgb(255, 255, 255);
+        font-size: 35px;
+        text-decoration: none;
+    }
+
+    .nav .li1 a {
+        color: rgb(255, 255, 255);
+        font-size: 25px;
+        text-decoration: none;
+
+    }
+
+    .nav li:hover {
+        background: var(--crl);
+        letter-spacing: 3.5px;
+        box-shadow: 3px 0 10px 5px var(--crl);
+        transition: 0.5s;
+    }
+
+    /* 导航结束 */
+
+    /* 版心 */
+    .bj {
+        width: 1528px;
+        height: 688px;
+        margin: 0 auto;
+        background: #123;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    .bj video {
+        width: 1528px;
+        height: 688;
+        z-index: -100;
+    }
+
+    /* 左边 */
+    .zhon {
+        width: 1530px;
+        height: 678px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 5;
+        background-image: linear-gradient(180deg, rgb(0, 0, 0, 0.8), rgb(0, 0, 0, 0));
+    }
+
+    .zuo {
+        background-image: url(swxb/zuos.png);
+        opacity: 0.7;
+        width: 450px;
+        height: 180px;
+        position: absolute;
+        top: 400px;
+        left: 0;
+        z-index: 10;
+    }
+
+    .zuo span {
+        float: left;
+        color: #ffffff;
+        font-size: 35px;
+    }
+
+    .zuo .q1 {
+        margin-top: 40px;
+    }
+
+    .zuo .wb {
+        float: right;
+        margin-right: 120px;
+        margin-top: 40px;
+        height: 100px;
+        width: 100px;
+        opacity: 0.8;
+    }
+
+    .zuo .wb img {
+        max-width: 100%;
+        border: #0e2b84 3px solid;
+    }
+
+    /* 左边结束 */
+    /* 右边 */
+    .you {
+        background-image: url(swxb/yous.png);
+        opacity: 0.7;
+        width: 450px;
+        height: 180px;
+        position: absolute;
+        top: 400px;
+        right: 0;
+        z-index: 10;
+    }
+
+    .you span {
+        float: left;
+        color: #ffffff;
+        font-size: 30px;
+        margin-top: 70px;
+        margin-left: 100px;
+    }
+
+    .you .wb1 {
+        width: 100px;
+        height: 100px;
+        margin-top: 40px;
+        margin-left: 250px;
+    }
+
+    .you .wb1 img {
+        max-width: 100%;
+        border: #0e2b84 3px solid;
+        opacity: 0.7;
+    }
+
+    .you .wb2 {
+        width: 100px;
+        height: 100px;
+        margin-top: -101px;
+        margin-left: 400px;
+    }
+
+    .you .wb2 img {
+        max-width: 100%;
+        border: #0e2b84 3px solid;
+        opacity: 0.7;
+    }
+
+    /* 右边结束 */
+
+    /* 版心结束 */
+    /* 内容2 */
+    #nr2 {
+        width: 1300px;
+        height: 500px;
+        margin: 30px auto;
+        border-bottom: 1px dashed rgb(0, 27, 147);
+    }
+
+    #nr2 h2 {
+        border-top: 4px solid rgb(0, 27, 147);
+        border-left: 3px solid rgb(0, 27, 147);
+        border-right: 3px solid rgb(0, 27, 147);
+        background: rgb(0, 37, 74);
+        color: rgb(211, 211, 211);
+        text-align: center;
+    }
+
+    #nr2 ul li {
+        border: 3px solid rgb(6, 15, 58);
+        display: inline-block;
+        width: 260px;
+        height: 147px;
+        margin-left: 50px;
+        margin-top: 30px;
+    }
+
+    #nr2 ul li p {
+        width: 200px;
+        height: 15px;
+        font-size: 13px;
+        text-align: center;
+        color: rgb(0, 34, 187);
+    }
+
+    #nr2 ul li .z2 {
+        color: rgb(63, 98, 255);
+    }
+
+    #nr2 ul li video {
+        width: 260px;
+        height: 147px;
+    }
+
+    /* 内容2结束 */
+    /* 内容3 */
+
+    #nr3 {
+        margin: 20px auto;
+        width: 1300px;
+        height: 1200px;
+    }
+
+    /* 游戏介绍 */
+    #nr3 .yxjs {
+        width: 700px;
+        height: 1100px;
+        float: left;
+    }
+
+    #nr3 .yxjs .js {
+        color: #fff;
+        font-size: 30px;
+    }
+
+    #nr3 .yxjs .ny {
+        width: 660px;
+        height: 1100px;
+        margin-top: 20px;
+        padding: 0 20px;
+        position: relative;
+        background-color: rgb(8, 1, 50);
+    }
+
+    #nr3 .yxjs .ny .t1 {
+        width: 700px;
+        height: 50px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-bottom: 1px rgb(56, 56, 56) solid;
+    }
+
+    #nr3 .yxjs .ny span {
+        display: inline-block;
+        width: 700px;
+        height: 30px;
+        margin-top: 40px;
+        margin-bottom: 50px;
+        font-size: 25px;
+        color: #3064ff;
+    }
+
+    #nr3 .yxjs .ny .yxts {
+        margin-top: 70px;
+    }
+
+
+    #nr3 .yxjs .ny p {
+        margin-top: 10px;
+        color: #fff;
+        font-size: 14px;
+    }
+
+    /* 游戏介绍结束 */
+    #nr3 .zx {
+        float: left;
+        height: 1200px;
+        width: 4px;
+        margin-left: 30px;
+        border-left: #3064ff dashed 1px;
+        border-right: #3064ff dashed 1px;
+    }
+
+    /* 游戏图片 */
+
+    #nr3 .yxtp {
+        float: right;
+        width: 500px;
+        height: 590px;
+        margin-top: 60px;
+        padding: 0 20px;
+    }
+
+
+    #nr3 .yxtp ul {
+        width: 500px;
+        height: 565px;
+        margin-top: 20px;
+        overflow: hidden;
+    }
+
+    #nr3 .yxtp ul:hover {
+        overflow: auto;
+    }
+
+
+
+    #nr3 .yxtp p {
+        width: 550;
+        height: 25px;
+        font-size: 21px;
+        display: inline-block;
+        color: rgb(78, 110, 255);
+    }
+
+    #nr3 .yxtp ul li {
+        width: 200px;
+        height: 100px;
+        margin-top: 27px;
+        margin-left: 28px;
+        display: inline-block;
+    }
+
+    #nr3 .yxtp ul li img {
+        max-width: 100%;
+        border: rgb(15, 31, 114) solid 3px;
+    }
+
+    #nr3 .yxtp ul li img:hover {
+        box-shadow: 5px 10px 10px rgba(36, 98, 255, 0.5);
+        transition-property: box-shadow;
+        transform: translate(-3px, -3px);
+        transition-duration: 0.2s;
+    }
+
+    /* 游戏图片结束 */
+    /* 系统要求 */
+    #xtyq {
+        width: 500px;
+        height: 480px;
+        margin-top: 30px;
+        float: right;
+        padding: 0 20px;
+        background-color: rgb(8, 1, 50);
+    }
+
+    #xtyq span {
+        height: 50px;
+        display: inline-block;
+        font-size: 20px;
+        margin-top: 10px;
+        color: #fff;
+    }
+
+    #xtyq ul li {
+        padding-top: 10px;
+        width: 480px;
+        height: 30px;
+        padding: 0 10px;
+        display: inline-block;
+    }
+
+    #xtyq ul li:hover {
+        background-color: rgba(0, 23, 151, 0.623);
+    }
+
+    #xtyq ul li:hover span {
+        color: #3064ff;
+    }
+
+    #xtyq ul .b {
+        border-bottom: rgba(0, 74, 223, 0.87) dashed 1px;
+    }
+
+    #xtyq ul .z {
+        font-size: 13px;
+        float: left;
+        margin-top: 5px;
+    }
+
+    #xtyq ul .y {
+        font-size: 13px;
+        float: right;
+        margin-top: 5px;
+    }
+
+    /* 系统要求结束 */
+    /* 底部 */
+    .dibu {
+        border-top: 3px solid rgb(103, 103, 103);
+        margin-top: 50px;
+        background-color: rgb(19, 19, 19);
+        width: 100%;
+        height: 300px;
+    }
+
+    .dibu ul {
+        margin-top: 30px;
+        float: left;
+        text-align: center;
+        margin-left: 210px;
+    }
+
+    .dibu ul li:nth-child(1) {
+        font-size: 20px;
+    }
+
+    .dibu ul li {
+        list-style: none;
+        font-size: 15px;
+        color: rgb(121, 121, 121);
+    }
+
+    .dibu a {
+        color: rgb(121, 121, 121);
+        text-decoration: none;
+    }
+
+    .dibu a:hover {
+        color: rgb(130, 23, 23);
+    }
+
+    hr {
+        height: 5px;
+        margin-top: 10px;
+    }
+
+    .tubiao {
+        width: 900px;
+        height: 150px;
+    }
+
+    .tubiao a {
+        margin-top: 20px;
+        float: left;
+        width: 50px;
+        height: 50px;
+    }
+
+    .tubiao a img {
+        width: 100%;
+        height: 50px;
+    }
+
+    /* 底部结束 */
+</style>
+
+<body>
+
+
+    <div class="nav">
+        <ul>
+            <li class="li1" style="--crl:#1e9bff">
+                <a href="index.html"> Game Time:&nbsp;&nbsp;</a>
+            </li>
+            <li style="--crl:#1e9bff">
+                <a href="#">顶部&nbsp;&nbsp;</a>
+            </li>
+            <li style="--crl:#1e9bff">
+                <a href="#nr2">游戏视频&nbsp;&nbsp;</a>
+            </li>
+            <li style="--crl:#1e9bff">
+                <a href="#nr3">游戏介绍&nbsp;&nbsp;</a>
+            </li>
+            <li style="--crl:#1e9bff">
+                <a href="#nr3">游戏图片&nbsp;&nbsp;</a>
+            </li>
+            <li style="--crl:#1e9bff">
+                <a href="#xtyq">系统要求&nbsp;&nbsp;</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="bj">
+        <video src="swxb/dasp.mp4" autoplay="autoplay" muted="muted" loop></video>
+        <div class="zhon"></div>
+        <div class="zuo">
+            <span class="q1"><i>死亡细胞<br>Deaad Cells</i></span>
+            <div class="wb"><img src="swxb/ewm1.jpg" alt=""></div>
+        </div>
+        <div class="you">
+            <span><i>关注我们：</i></span>
+            <div class="wb1"><img src="swxb/ewm1.jpg" alt=""></div>
+            <div class="wb2"><img src="swxb/ewm1.jpg" alt=""></div>
+        </div>
+    </div>
+    <div id="nr2">
+        <h2>游戏视频</h2>
+        <ul>
+            <li>
+                <video src="swxb/sp1.mp4" controls></video>
+                <p class="z1">再回头看看原来的风景</p><br>
+                <p class="z2">作者：Violet.</p>
+            </li>
+            <li>
+                <video src="swxb/sp1.mp4" controls></video>
+                <p class="z1">再回头看看原来的风景</p><br>
+                <p class="z2">作者：Violet</p>
+            </li>
+            <li>
+                <video src="swxb/sp1.mp4" controls></video>
+                <p class="z1">再回头看看原来的风景</p><br>
+                <p class="z2">作者:violet</p>
+            </li>
+            <li>
+                <video src="swxb/sp1.mp4" controls></video>
+                <p class="z1">再回头看看原来的风景</p><br>
+                <p class="z2">作者：violet</p>
+            </li>
+            <li>
+                <video src="swxb/sp2.mp4" controls></video>
+                <p class="z1">原来自己才是那个愚蠢的国王</p><br>
+                <p class="z2">作者：violet</p>
+            </li>
+            <li>
+                <video src="swxb/sp2.mp4" controls></video>
+                <p class="z1">原来自己才是那个愚蠢的国王</p><br>
+                <p class="z2">作者：violet</p>
+            </li>
+            <li>
+                <video src="swxb/sp2.mp4" controls></video>
+                <p class="z1">原来自己才是那个愚蠢的国王</p><br>
+                <p class="z2">作者：violet</p>
+            </li>
+            <li>
+                <video src="swxb/sp2.mp4" controls></video>
+                <p class="z1">原来自己才是那个愚蠢的国王</p><br>
+                <p class="z2">作者：violet</p>
+            </li>
+        </ul>
+    </div>
+
+    <div id="nr3">
+        <!-- 游戏介绍 -->
+        <div class="yxjs">
+            <p class="js">游戏介绍</p>
+            <div class="ny">
+                <p class="t1"></p>
+                <span class="yxts">游戏特色:</span>
+                <p>银河战士恶魔城(全新类型:RogueVania):类似银河战士恶魔城类游戏,玩家将在相连世界中体会逐渐探索的乐趣,且游戏将兼有Roguelike游戏的重复可玩性和刺激的永久死亡体验。<br></p>
+                <p>魂味战斗:无论是面对Boss还是杂兵,战斗系统均基于模式识别设计，武器和法术各有妙用,你需要充分利用手头的一切，另外切记时刻走位翻滚。<br></p>
+                <p>非线性流程:在反复死亡中不断解锁新关卡,探索城堡未知的边边角角,迎战强横凶残的Boss。<br></p>
+                <p>探索元素：不断发现新的惊喜：隐藏房间、秘密通道以及隐藏在城堡角落之中的迷人景观：踏入此门者无需回头，自有死亡为汝代劳</p>
+                <span class="yxwf">游戏玩法：</span>
+                <p>Roguelike、Roguelite、Roguelike-like、Rogueschmike……不管如何称呼这类游戏，似乎总能还再发明一些新名词出来！既然如此，我们向你推荐我们这款将银河战士恶魔城（Metroidvania）与Roguelike游戏特色融为一炉的作品，并且将这个新类型姑且称为Rogue银河城（RogueVANIA）！好吧，这名字在中文里似乎不是那样带感，但总之，下文中我门会详细介绍本作的一些特点。<br>
+                </p>
+
+                <p>提到银河战士恶魔城类游戏，我们通常都是指一个包含多个经过悉心设计的固定相连关卡的巨大世界。游戏舞台会是一片广阔但不会发生任何变化的孤岛。其中种种生物，Boss和路线都会预先设定好，藏在这片广阔世界的某个角落等待探索。当然，如何找到他们，则是另外一个故事。<br>
+                </p>
+
+                <p>然而，在《死亡细胞》中，死亡取代了经典银河战士恶魔城游戏反复走回头路进行探索的传统机制。起初，似乎有很多无法到达的区域散步在你前进的路途中，但随着你探索整个游戏世界的过程，这些谜题的线索会逐步揭晓。或许会是一把钥匙，或许是一种新的特殊移动技巧，或者是某种失落的技能。一旦解锁，你将永久掌握这些知识，而它们则能够助你探索游戏世界中更广阔的天地。厌倦了臭气熏天的下水道？攀上城头呼吸新鲜的空气吧！灵活运用你的技巧和游戏经验以及各种战利品来决定你前进的路线。<br>
+                </p>
+
+                <p>此外，正如游戏类型名Rogue银河城（RogueVania）所含蓄地暗示的那样，我们也同样深受近年来流行的Roguelite类游戏的影响。在游戏进程中，不会有检查点保存即时进度，你将直面各种紧张刺激，肾上腺素激增的凶险场面。一旦死亡你将损失惨重，因此你需要竭力逃出生天。有别于传统关卡中固定的敌人位置和地形设计，你将无法背板来挑战过程生成的关卡，你需要锤炼直觉，反应力以及面对各种不断变化的事态的适应能力。<br>
+                </p>
+
+                <p>正如我们提过那样，很多玩家对过程生成地图抱有恶劣的印象，会将它与糟糕无聊的关卡以及无趣空虚的玩法联系起来，我们对这个问题有着清醒的认识。因此，我们选择了一种混合和折衷的方案来克服这一挑战，每一轮的游戏地图实际上都是若干精心设计的小关卡的拼接。这样一来，你既可以享受充实细致，精心打造的游戏世界，又能在每一局新游戏中收获全新的体验。<br>
+                </p>
+
+                <p>切莫低估游戏难度，它可不会像是公园散步般轻松。迎接基于模式识别机制设计的怪物和Boss战，在一次一次战斗中了解并掌握战斗技巧，变得越来越强大。你需要精通拥有独特使用方式的各种武器，并且将翻滚和闪避等走位操作视为本能，以逃过那些出其不意出现的怪潮侵袭。我们秉承“困难但公平”的原则。<br>
+                </p>
+
+                <p>你已经厌倦了暴力与死亡？本作中还有很多其他的元素可供探索，寻找秘密房间和隐秘通道，发现深藏在城堡深处的迷人景观。我们亲爱的美术设计师，Thomas 以及 Gwen<br></p>
+                <p>为本作绘制了大量精美细致的像素艺术插画，令这个世界充满美丽和感动，创造了许多值得驻留的风景。没准，你也会关心这些美丽景观背后的故事，谁知道呢？<br></p>
+
+                <p>本游戏中文化由谜之声与Indienova网站协力完成。</p>
+            </div>
+        </div>
+        <!-- 游戏介绍结束 -->
+        <div class="zx"></div>
+        <div class="yxtp">
+            <p>游戏图片:</p>
+            <ul>
+                <li><img src="swxb/f1.jpg" alt=""></li>
+                <li><img src="swxb/f2.jpg" alt=""></li>
+                <li><img src="swxb/f3.jpg" alt=""></li>
+                <li><img src="swxb/f4.jpg" alt=""></li>
+                <li><img src="swxb/f5.jpg" alt=""></li>
+                <li><img src="swxb/f6.jpg" alt=""></li>
+                <li><img src="swxb/f7.jpg" alt=""></li>
+                <li><img src="swxb/f8.jpg" alt=""></li>
+                <li><img src="swxb/f1.jpg" alt=""></li>
+                <li><img src="swxb/f2.jpg" alt=""></li>
+                <li><img src="swxb/f3.jpg" alt=""></li>
+                <li><img src="swxb/f4.jpg" alt=""></li>
+                <li><img src="swxb/f5.jpg" alt=""></li>
+                <li><img src="swxb/f6.jpg" alt=""></li>
+                <li><img src="swxb/f7.jpg" alt=""></li>
+                <li><img src="swxb/f8.jpg" alt=""></li>
+                <li><img src="swxb/f1.jpg" alt=""></li>
+                <li><img src="swxb/f2.jpg" alt=""></li>
+                <li><img src="swxb/f3.jpg" alt=""></li>
+                <li><img src="swxb/f4.jpg" alt=""></li>
+                <li><img src="swxb/f5.jpg" alt=""></li>
+                <li><img src="swxb/f6.jpg" alt=""></li>
+                <li><img src="swxb/f7.jpg" alt=""></li>
+                <li><img src="swxb/f8.jpg" alt=""></li>
+            </ul>
+        </div>
+        <div id="xtyq">
+            <span>系统要求:</span>
+            <ul>
+                <li>
+                    <span class="z">开发商</span>
+                    <span class="y">Motion Twin</span>
+                </li>
+                <li>
+                    <span class="z">首发日期</span>
+                    <span class="y">2018年8月7日
+                    </span>
+                </li>
+                <li class="b">
+                    <span class="z">支持语音</span>
+                    <span class="y">简体中文 英语 法语 ...</span>
+                </li>
+            </ul>
+            <span>配置要求：</span>
+            <ul>
+                <li>
+                    <span class="z">操作系统</span>
+                    <span class="y">Windows 7+</span>
+                </li>
+                <li>
+                    <span class="z">处理器</span>
+                    <span class="y">Intel i5+</span>
+                </li>
+                <li>
+                    <span class="z">内存</span>
+                    <span class="y">2 GB RAM</span>
+                </li>
+                <li>
+                    <span class="z">显卡</span>
+                    <span class="y">Nvidia 450 GTS / Radeon HD 5750 or better</span>
+                </li>
+                <li>
+                    <span class="z">储存空间</span>
+                    <span class="y">需要 500 MB 可用空间</span>
+                </li>
+                <li>
+                    <span class="z">附注事项</span>
+                    <span class="y">DirectX 9.1+ or OpenGL 3.2+</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="dibu">
+        <hr>
+        <ul>
+            <li>
+                Game Time介绍
+            </li>
+            <li>
+                <a href="#">
+                    开发者团队
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    作者博客
+                </a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                游戏购买指南
+            </li>
+            <li>
+                <a href="#">
+                    一条龙式礼包
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    推荐
+                </a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                支付方式
+            </li>
+            <li>
+                <a href="#">
+                    分期
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    在线支付
+                </a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                游戏售后
+            </li>
+            <li>
+                <a href="#">
+                    支持7天试玩退款
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    礼包退款通道
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    联系我们
+                </a>
+            </li>
+        </ul>
+
+        <div class="tubiao">
+            <a href="#"><img src="swxb/di1.png" alt=""></a>
+            <a href="#"><img src="swxb/di2.png" alt=""></a>
+            <a href="#"><img src="swxb/di3.png" alt=""></a>
+        </div>
+    </div>
+</body>
+
+</html>

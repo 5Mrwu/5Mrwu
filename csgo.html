@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>csgo</title>
+    <link rel="stylesheet" href="wdsj.css">
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    li {
+        list-style: none;
+
+    }
+
+    body {
+        background-color: #61605e;
+    }
+
+
+    .beijin {
+        float: left;
+        position: fixed;
+    }
+
+    /* 音乐 */
+
+
+    .nav {
+        z-index: 999;
+        position: fixed;
+        width: 100%;
+        height: 50px;
+        background: #61605e;
+    }
+
+    .nav li {
+        margin-right: 20px;
+        margin-left: 20px;
+        display: inline-block;
+        list-style: none;
+    }
+
+    .nav li a {
+        margin-left: 20px;
+        color: rgb(255, 255, 255);
+        font-size: 35px;
+        text-decoration: none;
+    }
+
+    .nav .li1 a {
+        color: rgb(255, 255, 255);
+        font-size: 25px;
+        text-decoration: none;
+
+    }
+
+    .nav li:hover {
+        background: var(--crl);
+        letter-spacing: 3.5px;
+        box-shadow: 3px 0 10px 5px var(--crl);
+        transition: 0.5s;
+    }
+
+    /* 头 */
+    .xin {
+        width: 1500px;
+        height: 405px;
+        margin: 0 auto;
+        background-image: url(images/123.jpg);        /*背景图片*/
+        background-size: cover;
+    }
+
+    .shipin {
+
+        width: 300px;
+        height: 200px;
+    }
+
+    .xin video {
+        margin-top: 150px; 
+        margin-left: 100px;
+        width: 600px;
+        height: 300px;
+    }
+
+    /* 导航栏，版心 */
+    /* 左边内容 */
+    #ny2 .p {
+        font-size: 30px;
+        text-align: center;
+        border-top: 9px solid rega(#61605e);
+    }
+
+    #ny2 {
+        width: 1500px;
+        height: 450px;
+        margin: 10px auto;
+        border: 1px seashell solid;
+        background-color: rgb(145, 150, 145);
+    }
+
+
+
+    #ny2 .nny1 {
+        width: 1500px;
+        height: 500px;
+        margin: 10px 170px;
+    }
+
+    #ny2 .nny1 .zuo {
+        float: left;
+        width: 580px;
+        height: 300px;
+        border: 10px rgb(177, 175, 173) solid;
+        background-color: rgb(0, 0, 0);
+        background-size: cover;
+        
+        position: relative;
+
+    }
+
+    #ny2 .nny1 .zuo ul {
+        position: absolute;
+        bottom: 10px;
+        right: 20px;
+    }
+
+    #ny2 .nny1 .zuo ul li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    #ny2 .nny1 .zuo ul li a {
+        color: aliceblue;
+        text-decoration: none;
+        display: inline-block;
+        padding: 5px 10px;
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+
+    #ny2 .nny1 .zuo ul li a:hover {
+        background-color: chocolate;
+    }
+
+    #ny2 .nny1 .zuo .container{
+        width: 580px;
+        height: 300px;
+        overflow: hidden;
+    }
+    #photo{
+        width: 2320px;
+        height: 300px;
+        overflow: hidden;
+        animation: switch 5s ease-out infinite;
+    }
+    #container{
+        overflow: hidden;
+    }
+    #photo >img{
+        width: 580px;
+        height: 300px;
+    }
+    @keyframes switch{
+        0%,25%{
+        margin-left: 0;
+    }
+    35%,60%{
+    margin-left: -584px;
+    }
+    70%,100%{
+    margin-left: -1170px;
+    }
+    }
+
+    /* <左边内容> */
+    /* 右边内容 */
+    #ny2 .nny1 .you {
+        float: left;
+        width: 600px;
+        height: 320px;
+        background-color: #fff;
+    }
+
+    #ny2 .nny1 .you ul li .b {
+        height: 30px;
+        width: 600px;
+        margin: 0 20px;
+    }
+
+    #ny2 .nny1 .you ul li a {
+        height: 30px;
+        width: 400px;
+        color: black;
+        font-size: 18px;
+        display: inline-block;
+        text-decoration: none;
+    }
+
+    #ny2 .nny1 .you ul li .l {
+        font-size: 21px;
+    }
+
+
+    #ny2 .nny1 .you ul li a:hover {
+
+        height: 30px;
+        width: 500px;
+        color: rgb(140, 152, 176);
+    }
+
+    #ny2 .nny1 .you ul .gxny {
+        text-align: center;
+        height: 50px;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    #ny2 .nny1 .you ul li a span {
+        font-size: 21px;
+        color: rgba(0,0,0,0.3);
+    }
+
+    #ny2 .nny1 .you ul .gxny p {
+        display: inline-block;
+        height: 30px;
+        width: 100px;
+    }
+
+    #ny2 .nny1 .you ul .gxny p a {
+        height: 29px;
+        width: 100px;
+        padding: 10px 0;
+    }
+
+    #ny2 .nny1 .you ul .gxny p .l:hover {
+        background-color: rgba(0,0,0,0.3);
+    }
+
+    /* <右边内容> */
+    /* 以上内容2 */
+    /* 内容3 */
+    #ny3 {
+        width: 1500px;
+        height: 178px;
+        margin: 10px auto;
+        background-color: #61605e;
+        /* border: 1px rgba(0,0,0,0.3) solid; */
+        margin-top: -100px;
+    }
+
+    #ny3 ul li {
+        display: inline-block;
+    }
+
+    #ny3 ul li a {
+        display: inline-block;
+    }
+
+    #ny3 ul li {
+        width: 300px;
+        height: 178px;
+        float: left;
+    }
+
+
+    #ny3 ul .t1 a {
+        width: 300px;
+        height: 178px;
+        background: url(images/2.jpg) no-repeat;
+        border: 2px solid  reda(0,0,0,0.3);
+    }
+
+    #ny3 ul .t1 a:hover {
+        background: url(images/1.jpg);
+    }
+
+    #ny3 ul .t2 a {
+        width: 300px;
+        height: 178px;
+        background: url(images/3.jpg) no-repeat;
+
+    }
+
+    #ny3 ul .t2 a:hover {
+        background: url(images/4.jpg);
+    }
+
+    #ny3 ul .t3 a {
+        width: 300px;
+        height: 178px;
+        background: url(images/5.jpg) no-repeat;
+
+    }
+
+    #ny3 ul .t3 a:hover {
+        background: url(images/6.jpg);
+    }
+
+    #ny3 ul .t4 a {
+        width: 300px;
+        height: 178px;
+        background: url(images/7.jpg) no-repeat;
+
+    }
+
+    #ny3 ul .t4 a:hover {
+        background: url(images/8.jpg);
+    }
+
+    #ny3 ul .t5 a {
+        width: 300px;
+        height: 178px;
+        background: url(images/9.jpg) no-repeat;
+
+    }
+
+    #ny3 ul .t5 a:hover {
+        background: url(images/10.jpg);
+    }
+
+
+    /* 内容4 */
+    /* 玩家作品 */
+    #ny4 {
+        width: 1500px;
+        height: 500px;
+        margin: 10px auto;
+        background-color: rgb(168, 168, 168);
+    }
+
+    #ny4 .wjzp {
+        float: left;
+        width: 209px;
+        height: 463px;
+    }
+
+    #ny4 .wjzp li {
+        display: inline-block;
+    }
+
+    #ny4 .wjzp .zuo {
+        width: 209px;
+        height: 120px;
+        border-top: 2px rgb(58, 58, 58) solid;
+    }
+
+    #ny4 .wjzp .zuo a {
+        display: inline-block;
+        width: 209px;
+        height: 90px;
+        padding-top: 37px;
+        color: rgb(0, 0, 0);
+        font-size: 25px;
+        text-decoration: none;
+        text-align: center;
+        background-color: #a6946f;
+    }
+
+    #ny4 .wjzp .zuo a:hover {
+        color: rgb(169, 173, 181);
+        background-color: rgb(112, 113, 115);
+    }
+
+    /* 玩家作品 */
+    /* 图片 */
+    #ny4 .tp {
+        float: left;
+        width: 1291px;
+        height: 500px;
+        background-color: rgb(177, 175, 173);
+    }
+
+    #ny4 .tp li {
+        display: inline-block;
+        width: 290px;
+        height: 189px;
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+
+    #ny4 .tp li a {
+        display: inline-block;
+        width: 290px;
+        height: 189px;
+        text-shadow: 3px 7px 11px;
+        background-color: rgb(177, 175, 173);
+
+    }
+
+    #ny4 .tp li a img {
+        max-height: 100%;
+        max-width: 100%;
+    }
+    #ny4 .tp li a img:hover{
+        box-shadow: 5px 10px 10px rgba(119, 119, 242, 0.5);
+        transition-property: box-shadow;
+        transform: translate(-3px, -3px);
+        transition-duration: 0.2s;
+        transform: scale(1.2);
+    }
+
+    /* 图片 */
+
+    #ny5 {
+        width: 1500px;
+        height: 500px;
+        margin: 10px auto;
+        background: url(images/14.jpg);
+    }
+
+    #ny5 .spzx {
+        float: left;
+        width: 165px;
+        height: 47px;
+    }
+
+    #ny5 .xz li {
+        display: inline-block;
+        width: 128px;
+        height: 54px;
+        margin-left: 80px;
+    }
+
+    #ny5 .xz li a {
+        display: inline-block;
+        width: 128px;
+        height: 42px;
+        color: #123;
+        text-align: center;
+        font-size: 24px;
+        padding-top: 12px;
+        text-decoration: none;
+    }
+    #ny5 .xz li a:hover {
+        color: #fff;
+        background-image: url(images/11.jpg);
+    }
+    #ny5 .text{
+        width: 1210px;
+        height: 395px;
+        margin: 0 auto;
+        text-align: center;
+        margin-left: 156px;
+        margin-top: 43px;
+        overflow: auto;
+    }
+    #ny5 .text::-webkit-scrollbar{
+        width: 15px;
+        margin-top: 43px;
+        background-color: rgb(101, 100, 100);
+    }
+    #ny5 .text:hover::-webkit-scrollbar-track-piece{
+        background-color: rgb(100, 100, 100);
+        border-radius: 6px;
+    }
+    #ny5 .text ul li{
+        margin: 20px;
+        float: left;
+    }
+    #ny5 .text img{
+        width: 298px;
+        height: 198px;
+        margin-top: 5px;
+        
+    }
+
+    #ny5 .text li a img:hover{
+        box-shadow: 5px 10px 10px rgba(29, 29, 30, 0.5);
+        transition-property: box-shadow;
+        transform: translate(-3px, -3px);
+        transition-duration: 0.2s;
+    }
+
+    /* 内容6 */
+    #ny6 {
+        width: 1500px;
+        height: 500px;
+        margin: 10px auto;
+        /* background-color: rgba(210, 183, 127, 0.3); */
+    }
+    .att {
+        /* border-top: 3px solid rgb(103, 103, 103); */
+        margin-top: 10px;
+        background-color: #323434;
+        width: 100%;
+        height: 150px;
+    }
+
+    .att ul {
+        margin-top: 30px;
+        float: left;
+        text-align: center;
+        margin-left: 210px;
+    }
+
+    .att ul li:nth-child(1) {
+        font-size: 20px;
+    }
+
+    .att ul li {
+        list-style: none;
+        font-size: 15px;
+        color: rgb(7, 7, 7);
+    }
+
+    .att a {
+        color: rgb(169, 191, 225);
+        text-decoration: none;
+    }
+
+    .att a:hover {
+        color: rgb(223, 216, 216);
+    }
+    hr {
+        height: 5px;
+        margin-top: 10px;
+    }
+    /* #di {
+        width: 100%;
+        height: 500px;
+        background-color: rgb(0,0,0,0.3);
+    } */
+</style>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li class="li1" style="--crl:#1e9bff">
+                <a href="index.html"> Game Time:&nbsp;&nbsp;</a>
+            </li>
+            <li style="--crl:#1e9bff">
+                <a href="#">顶部&nbsp;&nbsp;</a>
+            </li>
+            <li style="--crl:#1e9bff">
+                <a href="#ny2">更新内容&nbsp;&nbsp;</a>
+            </li>
+            <li style="--crl:#1e9bff">
+                <a href="#ny4">玩家作品&nbsp;&nbsp;</a>
+            </li>
+            <li style="--crl:#1e9bff">
+                <a href="#ny5">枪械图片&nbsp;&nbsp;</a>
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="xin">
+    
+    </div>
+    <!-- 导航栏和版心 -->
+    <div id="ny2">
+        <p class="p"><b>更新内容</b></p>
+        <div class="nny1">
+            <div class="zuo">
+                <ul>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                </ul>
+                <div id="container">
+                    <div id="photo">
+                        <img src="images/R-C-6.jpg" alt="">
+                        <img src="images/R-C-8.JPG" alt="">
+                        <img src="images/R-C.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="you">
+                <ul>
+                    <li class="gxny"><b>
+                            <p><a href="#" class="l">最新</a></p>
+                            <p><a href="#" class="l">热点</a></p>
+                            <p><a href="#" class="l">新闻</a></p>
+                            <p><a href="#" class="l">公告</a></p>
+                        </b></li>
+                    <li><a href="#" class="b">><span>【公告】</span>CSGO更新：M4A1调整，Ancient改动</a></li>
+                    <li><a href="#" class="b">><span>【公告】</span>Run little girls, run!</a></li>
+                    <li><a href="#" class="b">><span>【新闻】</span>icon玩CSGO开挂被封账号？这玩笑开的有点大了</a></li>
+                    <li><a href="#" class="b">><span>【新闻】</span>不要错过，PGL安特卫普2022冠军赛预测已开发放</a></li>
+                    <li><a href="#" class="b">><span>【热点】</span>csgo ping太高怎么办</a></li>
+                    <li><a href="#" class="b">><span>【热点】</span>CSGO热身皇帝啥意思 茄子热身皇帝什么梗</a></li>
+                    <li><a href="#" class="b">><span>【热点】</span>CAC，2019年八支战队11月20日上海巅峰对决</a></li>
+                    <li><a href="#" class="b">><span>【热点】</span>一狙击枪，直接封神！</a></li>
+                    <li><a href="#" class="b">><span>【热点】</span>今晚到底谁会获胜</a></li>
+            </div>
+        </div>
+
+        <div id="ny3">
+            <ul>
+                <li class="t1"><a href="https://store.steamchina.com/join/" target="_blank"></a></li>
+                <li class="t2"><a href="https://www.csgo.com.cn/download/index.html/" target="_blank"></a></li>
+                <li class="t3"><a href="https://www.csgo.com.cn/match/" target="_blank"></a></li>
+                <li class="t4"><a href="https://wmsjdj.tmall.com/category-1465876517.htm" target="_blank"></a></li>
+                <li class="t5"><a href="https://www.csgo.com.cn/hd/1704/newerguide/index.html" target="_blank"></a></li>
+            </ul>
+        </div>
+        <div id="ny4">
+            <div class="wjzp">
+                <ul>
+                    <li class="zuo"><img src="images/13.jpg"></li>
+                    <li class="zuo"><a href="https://www.csgo.com.cn/article/details/20200607/221851.html"><b>作息指南</b></a></li>
+                    <li class="zuo"><a href="#"><b>枪械图片</b></a></li>
+                    <li class="zuo"><a href="https://www.csgo.com.cn/videos/index.html"><b>精彩视频</b></a></li>
+                </ul>
+            </div>
+            <div class="tp">
+                <ul>
+                    <li>
+                        <a href="#"><img src="images/OIP-C-4.jpg"></a>
+                        <p></p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/OIP-C-5.jpg"></a>
+                        <p></p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/OIP-C-7.jpg"></a>
+                        <p></p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/r-c-13.jpg"></a>
+                        <p></p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/r-c-14.jpg"></a>
+                        <p></p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/OIP-C.12.JPG"></a>
+                        <p></p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/无标题.3.jpg"></a>
+                        <p></p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/无标题.4.jpg"></a>
+                        <p></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="ny5">
+            <div class="spzx"><img src="images/12.jpg">
+                <!-- <div class="fx">1<br>1<br>1<br></div> -->
+            </div>
+            <div class="xz">
+                <ul>
+                    <li><a href="#"><b>推荐</b></a></li>
+                    <li><a href="#"><b>指南</b></a></li>
+                    <li><a href="#"><b>社区</b></a></li>
+                    <li><a href="#"><b>玩法</b></a></li>
+                    <li><a href="#"><b>地图社</b></a></li>
+                </ul>
+            </div>
+            <div class="text">
+                <ul>
+                    <li>
+                        <a href="#"><img src="images/OIP-13.jpg"></a>
+                        <p></p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/OIP-C-9.jpg"></a>
+                        <p></p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/OIP-C-8.jpg"></a>
+                        <p></p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/R-C-9.jpg"></a>
+                        <p></p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/R-C -4.jpg"></a>
+                        <p></p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/OIP-C-11.jpg"></a>
+                        <p></p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/R-C -3.jpg"></a>
+                        <p></p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/q.jpg"></a>
+                        <p></p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/r.jpg"></a>
+                        <p></p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/t.jpg"></a>
+                        <p></p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/u.jpg"></a>
+                        <p></p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/w.jpg"></a>
+                        <p></p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/OIP-C-10.jpg"></a>
+                        <p></p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/R-C-11.jpg"></a>
+                        <p></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="ny6">
+            <hr>
+            <div class="att">
+                <ul>
+                    <li>
+                        CsGo
+                    </li>
+                    <li>
+                        <a href="#">
+                            制作团社
+                        </a>
+                    </li>
+                    <!-- <li>
+                        <a href="#">
+                            作者博客
+                        </a>
+                    </li> -->
+                </ul>
+                <ul>
+                    <li>
+                        CsGo健康指南
+                    </li>
+                    <li>
+                        <a href="#">
+                            未成年游戏时间
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            新手礼包
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        购买方式
+                    </li>
+                    <!-- <li>
+                        <a href="#">
+                            分期
+                        </a>
+                    </li> -->
+                    <li>
+                        <a href="#">
+                            在线支付
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        游戏客服
+                    </li>
+                    <!-- <li>
+                        <a href="#">
+                            支持7天试玩退款
+                        </a>
+                    </li> -->
+                    <!-- <li>
+                        <a href="#">
+                            新人礼包
+                        </a>
+                    </li> -->
+                    <li>
+                        <a href="#">
+                            联系我们
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- <div id="di"></div>
+        <span class="beijin">
+            <audio src="wdsj/C418 - Minecraft.mp3" autoplay="autoplay" loop="loop"></audio>
+        </span> -->
+    </div>
+</body>
+
+</html>
